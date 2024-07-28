@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:id="@+id/frame_heading"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/running_image_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bike_heading" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_overlay" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/i_am_cycling"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_heading">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_longest_ride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_longest_ride_heading"
+                    style="@style/RecordNameTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/longest_ride"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_longest_ride_time"
+                    style="@style/RecordValueTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22:04"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_longest_ride_date"
+                    style="@style/RecordDateTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="29/11/2020"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_longest_ride_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_biggest_climb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_biggest_climb_heading"
+                    style="@style/RecordNameTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/biggest_climb"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_biggest_climb_time"
+                    style="@style/RecordValueTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22:04"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_biggest_climb_date"
+                    style="@style/RecordDateTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="29/11/2020"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_biggest_climb_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_best_average_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_best_average_speed_heading"
+                    style="@style/RecordNameTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/best_average_speed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_best_average_speed_time"
+                    style="@style/RecordValueTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22:04"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_best_average_speed_date"
+                    style="@style/RecordDateTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="29/11/2020"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_best_average_speed_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

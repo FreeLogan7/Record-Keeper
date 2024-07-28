@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Record Keeper</string>
+    <string name="running">Running</string>
+    <string name="cycling">Cycling</string>
+    <string name="i_run">Running</string>
+    <string name="running_image_description">Running Image</string>
+    <string name="bike_image_description">Biking Image</string>
+    <string name="marathon">Marathon</string>
+    <string name="half_marathon">Half Marathon</string>
+    <string name="_10km">10km</string>
+    <string name="_5km">5km</string>
+    <string name="i_am_cycling">Cycling</string>
+    <string name="longest_ride">Longest Ride</string>
+    <string name="biggest_climb">Biggest Climb</string>
+    <string name="best_average_speed">Best Average Speed</string>
+    <string name="Cycling_1">Longest Ride</string>
+    <string name="Cycling_2">Biggest Climb</string>
+    <string name="Cycling_3">Best Average Speed</string>
+    <string name="edit_me">Edit Me!</string>
+    <string name="edit_time">edit_time</string>
+    <string name="edit_date">edit_date</string>
+    <string name="clear">Clear</string>
+    <string name="save_info">Save Info</string>
+    <string name="reset_all_records">Reset All Records</string>
+    <string name="reset_cycling_records">Reset Cycling Records</string>
+    <string name="reset_running_records">Reset Running Records</string>
+</resources>
